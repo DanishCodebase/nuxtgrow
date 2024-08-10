@@ -10,5 +10,4 @@ document.querySelector("#free").addEventListener("click", function () {
 
 document.querySelector("#redirect").addEventListener("click", function () {
   document.querySelector(".cpu").classList.toggle("d-none");
-  window.location.href = "/#course";
 });
