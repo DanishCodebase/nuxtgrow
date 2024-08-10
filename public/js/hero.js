@@ -44,16 +44,6 @@ window.addEventListener("load", autoShowPopup);
 document.getElementById("close").addEventListener("click", hidePopup);
 show();
 
-document.querySelector("#cours").addEventListener("click", function () {
-  document.querySelector(".cpu").classList.toggle("d-none");
-  document.querySelector(".cpu").classList.remove("show");
-});
-
-document.querySelector("#redirect").addEventListener("click", function () {
-  document.querySelector(".cpu").classList.toggle("d-none");
-  window.location.href = '/#course';
-});
-
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     autoplay: !0,

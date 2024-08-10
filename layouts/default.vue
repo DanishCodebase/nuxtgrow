@@ -55,14 +55,21 @@ useHead({
       defer: "defer",
       type: "text/javascript",
     },
+    {
+      src: "/js/course.js",
+      defer: "defer",
+      type: "text/javascript",
+    },
   ],
 });
+
 </script>
 
 <template>
   <Header />
   <slot />
   <Footer />
+  <Coursepop />
 </template>
 
 <style scoped>
