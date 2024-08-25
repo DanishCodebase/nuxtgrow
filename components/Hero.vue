@@ -34,26 +34,9 @@
             <nuxt-link
               to="https://wa.me/917524801556"
               type="button"
-              class="btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
+              class="btn btn--glow effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
               target="_blank"
-              >Start Learning With Free Demo
-              <svg>
-                <defs>
-                  <filter id="glow">
-                    <fegaussianblur
-                      result="coloredBlur"
-                      stddeviation="5"
-                    ></fegaussianblur>
-                    <femerge>
-                      <femergenode in="coloredBlur"></femergenode>
-                      <femergenode in="coloredBlur"></femergenode>
-                      <femergenode in="coloredBlur"></femergenode>
-                      <femergenode in="SourceGraphic"></femergenode>
-                    </femerge>
-                  </filter>
-                </defs>
-                <rect />
-              </svg> </nuxt-link
+              >Start Learning With Free Demo </nuxt-link
             ><nuxt-link
               to="https://t.me/resilientgrowofficial"
               type="button"
@@ -72,3 +55,5 @@
     </div>
   </section>
 </template>
+
+

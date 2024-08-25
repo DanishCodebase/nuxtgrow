@@ -1,22 +1,21 @@
 <template>
-  <slot />
-  <body>
+  <div>
     <nuxt-link class="fs-6" to="/">Go back to home page</nuxt-link>
-  </body>
+  </div>
 </template>
 
 <style scoped>
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  height: 100vh;
   background-image: url("/images/cooming\ soon.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+  background-position: center;
   padding-top: 25px;
-}
-
-.theme {
-  display: none !important;
 }
 
 .fs-6 {
@@ -33,7 +32,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
+  div {
     background-image: url("/images/coming-soon-sm.webp");
     background-position-x: center;
     background-position-y: top;

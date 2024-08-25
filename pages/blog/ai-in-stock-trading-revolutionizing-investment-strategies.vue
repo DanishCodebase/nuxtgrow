@@ -255,12 +255,14 @@ definePageMeta({
                 </p>
                 <p>
                   Say goodbye to outdated textbooks, give our unique
-                  <nuxt-link to="" class="card-title">AI Trading tool</nuxt-link> a go—I think
-                  it’s a game-changer for you—and say hello to interactive,
-                  real-time learning. AI brings stock trading courses to life,
-                  making education an exciting journey rather than a dull
-                  lecture. You’re not just learning; you’re preparing for the
-                  stock market stage.
+                  <nuxt-link to="" class="card-title"
+                    >AI Trading tool</nuxt-link
+                  >
+                  a go—I think it’s a game-changer for you—and say hello to
+                  interactive, real-time learning. AI brings stock trading
+                  courses to life, making education an exciting journey rather
+                  than a dull lecture. You’re not just learning; you’re
+                  preparing for the stock market stage.
                 </p>
                 <p>
                   Revolutionize your approach with ‘AI in Stock Trading:
@@ -377,12 +379,8 @@ definePageMeta({
   background-position: center;
 }
 .cut-text {
-  /* --max-lines: 3;
-        --line-height: 1.4;
-        max-height: calc(var(--max-lines)*1em* var(--line-height));
-        overflow: hidden; */
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -406,7 +404,6 @@ definePageMeta({
 }
 
 .p-4 {
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   --default-color-rgb: 33, 37, 41;
   box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
   padding: 30px !important;

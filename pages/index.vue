@@ -23,5 +23,3 @@ useHead({
   <Contact />
   <Popup />
 </template>
-
-<style scoped></style>

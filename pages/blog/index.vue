@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <img
@@ -47,23 +49,6 @@
                 type="button"
                 class="px-5 mt-3 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-                <svg>
-                  <defs>
-                    <filter id="glow">
-                      <fegaussianblur
-                        result="coloredBlur"
-                        stddeviation="5"
-                      ></fegaussianblur>
-                      <femerge>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="SourceGraphic"></femergenode>
-                      </femerge>
-                    </filter>
-                  </defs>
-                  <rect />
-                </svg>
               </nuxt-link>
             </div>
           </div>
@@ -89,23 +74,6 @@
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-                <svg>
-                  <defs>
-                    <filter id="glow">
-                      <fegaussianblur
-                        result="coloredBlur"
-                        stddeviation="5"
-                      ></fegaussianblur>
-                      <femerge>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="SourceGraphic"></femergenode>
-                      </femerge>
-                    </filter>
-                  </defs>
-                  <rect />
-                </svg>
               </nuxt-link>
             </div>
           </div>
@@ -130,23 +98,6 @@
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-                <svg>
-                  <defs>
-                    <filter id="glow">
-                      <fegaussianblur
-                        result="coloredBlur"
-                        stddeviation="5"
-                      ></fegaussianblur>
-                      <femerge>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="SourceGraphic"></femergenode>
-                      </femerge>
-                    </filter>
-                  </defs>
-                  <rect />
-                </svg>
               </nuxt-link>
             </div>
           </div>
@@ -172,23 +123,6 @@
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-                <svg>
-                  <defs>
-                    <filter id="glow">
-                      <fegaussianblur
-                        result="coloredBlur"
-                        stddeviation="5"
-                      ></fegaussianblur>
-                      <femerge>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="coloredBlur"></femergenode>
-                        <femergenode in="SourceGraphic"></femergenode>
-                      </femerge>
-                    </filter>
-                  </defs>
-                  <rect />
-                </svg>
               </nuxt-link>
             </div>
           </div>

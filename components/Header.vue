@@ -65,27 +65,10 @@
         </ul>
         <nuxt-link
           to="https://fas.st/t/MSkxE2fJ"
-          class="btn hero-btn effect d-flex align-items-center mx-auto me-lg-0 ms-xl-5 rounded-pill mt-4 mt-lg-0 blue btn-101"
+          class="btn hero-btn effect btn--glow d-flex align-items-center mx-auto me-lg-0 ms-xl-5 rounded-pill mt-4 mt-lg-0 blue btn-101"
           type="submit"
           target="_blank"
           >Become A Pro Trader
-          <svg>
-            <defs>
-              <filter id="glow">
-                <fegaussianblur
-                  result="coloredBlur"
-                  stddeviation="5"
-                ></fegaussianblur>
-                <femerge>
-                  <femergenode in="coloredBlur"></femergenode>
-                  <femergenode in="coloredBlur"></femergenode>
-                  <femergenode in="coloredBlur"></femergenode>
-                  <femergenode in="SourceGraphic"></femergenode>
-                </femerge>
-              </filter>
-            </defs>
-            <rect />
-          </svg>
         </nuxt-link>
       </div>
     </div>

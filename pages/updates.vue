@@ -1,9 +1,11 @@
 <script setup>
 definePageMeta({
-  layout: "comingsoon",
+  layout: "only",
 });
 </script>
 
-<template></template>
+<template>
+  <ComingSoon />
+</template>
 
 <style scoped></style>
