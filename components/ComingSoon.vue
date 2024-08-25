@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link class="fs-6" to="/">Go back to home page</nuxt-link>
+    <a class="fs-6" href="/">Go back to home page</a>
   </div>
 </template>
 

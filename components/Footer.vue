@@ -68,10 +68,10 @@
               <nuxt-link to="/blog" class="nav-link p-0 text-body-secondary">Blog</nuxt-link>
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/free-courses" class="nav-link p-0 text-body-secondary"
+              <a href="/free-courses" class="nav-link p-0 text-body-secondary"
                 >Free Courses<span class="ms-3 blink btn hero-btn rounded-pill">
                   Free</span
-                ></nuxt-link
+                ></a
               >
             </li>
             <li class="nav-item mb-4">

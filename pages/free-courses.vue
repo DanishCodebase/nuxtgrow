@@ -857,23 +857,6 @@ useHead({
             </select></label
           ><button id="btnSubmit" class="btn-101" type="submit">
             Let's succeed together
-            <svg>
-              <defs>
-                <filter id="glow">
-                  <fegaussianblur
-                    result="coloredBlur"
-                    stddeviation="5"
-                  ></fegaussianblur>
-                  <femerge>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="SourceGraphic"></femergenode>
-                  </femerge>
-                </filter>
-              </defs>
-              <rect />
-            </svg>
           </button>
         </form>
         <a class="member1 mt-4">Already member?</a>
@@ -913,23 +896,6 @@ useHead({
               required /></label
           ><button id="btnSubmit" class="btn-101" type="submit">
             Let's succeed together
-            <svg>
-              <defs>
-                <filter id="glow">
-                  <fegaussianblur
-                    result="coloredBlur"
-                    stddeviation="5"
-                  ></fegaussianblur>
-                  <femerge>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="SourceGraphic"></femergenode>
-                  </femerge>
-                </filter>
-              </defs>
-              <rect />
-            </svg>
           </button>
         </form>
         <span class="new">New to Resilient Grow?</span
