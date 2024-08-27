@@ -5,58 +5,58 @@
     <div class="container px-lg-5">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
         <div class="col col-md-4 mb-3">
-          <nuxt-link class="navbar-brand d-flex flex-column align-items-center" to="/"
+          <a class="navbar-brand d-flex flex-column align-items-center" href="/"
             ><img
               src="/images/Resilient-Grow1.webp"
               height="50"
               width="79"
               alt=""
-            /><span class="fs-6 fw-normal">Resilient Grow</span></nuxt-link
+            /><span class="fs-6 fw-normal">Resilient Grow</span></a
           >
           <p class="text-body-secondary mt-4">
             To deliver top-notch education and enable people to command their
             financial future & growth.
           </p>
           <div class="mnc-logos">
-            <nuxt-link to="https://www.youtube.com/@resilientgrow" target="_blank"
-              ><img src="/icons/youtube.png" alt="" /></nuxt-link
-            ><nuxt-link to="https://www.facebook.com/resilientgrow1" target="_blank"
-              ><img src="/icons/facebook.png" alt="" /></nuxt-link
-            ><nuxt-link to="https://shorturl.at/loCD6" target="_blank"
-              ><img src="/icons/whatsapp.png" alt="" /></nuxt-link
-            ><nuxt-link to="https://t.me/resilientgrow" target="_blank"
-              ><img src="/icons/telegram.png" alt="" /></nuxt-link
-            ><nuxt-link to="https://www.instagram.com/resilient.grow/" target="_blank"
-              ><img id="insta" src="/icons/instagram.png" alt="" /></nuxt-link
-            ><nuxt-link
-              to="https://twitter.com/resilientgrow"
+            <a href="https://www.youtube.com/@resilientgrow" target="_blank"
+              ><img src="/icons/youtube.png" alt="" /></a
+            ><a href="https://www.facebook.com/resilientgrow1" target="_blank"
+              ><img src="/icons/facebook.png" alt="" /></a
+            ><a href="https://shorturl.at/loCD6" target="_blank"
+              ><img src="/icons/whatsapp.png" alt="" /></a
+            ><a href="https://t.me/resilientgrow" target="_blank"
+              ><img src="/icons/telegram.png" alt="" /></a
+            ><a href="https://www.instagram.com/resilient.grow/" target="_blank"
+              ><img id="insta" src="/icons/instagram.png" alt="" /></a
+            ><a
+              href="https://twitter.com/resilientgrow"
               id="twitter"
               target="_blank"
               ><img src="/icons/twitter.png" alt=""
-            /></nuxt-link>
+            /></a>
           </div>
         </div>
         <div class="col mt-5 mt-md-0 w-auto cm mb-3">
           <h5>Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item my-4">
-              <nuxt-link to="/about" class="nav-link p-0 text-body-secondary"
-                >About Us</nuxt-link
+              <a href="/about" class="nav-link p-0 text-body-secondary"
+                >About Us</a
               >
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/program" class="nav-link p-0 text-body-secondary"
-                >Program</nuxt-link
+              <a href="/program" class="nav-link p-0 text-body-secondary"
+                >Program</a
               >
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/refund" class="nav-link p-0 text-body-secondary"
-                >Refund Policy</nuxt-link
+              <a href="/refund" class="nav-link p-0 text-body-secondary"
+                >Refund Policy</a
               >
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/policy" class="nav-link p-0 text-body-secondary"
-                >Terms & Conditions</nuxt-link
+              <a href="/policy" class="nav-link p-0 text-body-secondary"
+                >Terms & Conditions</a
               >
             </li>
           </ul>
@@ -65,7 +65,7 @@
           <h5>Resources</h5>
           <ul class="nav flex-column">
             <li class="nav-item my-4">
-              <nuxt-link to="/blog" class="nav-link p-0 text-body-secondary">Blog</nuxt-link>
+              <a href="/blog" class="nav-link p-0 text-body-secondary">Blog</a>
             </li>
             <li class="nav-item mb-4">
               <a href="/free-courses" class="nav-link p-0 text-body-secondary"
@@ -75,13 +75,13 @@
               >
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/updates" class="nav-link p-0 text-body-secondary"
-                >Market Updates</nuxt-link
+              <a href="/updates" class="nav-link p-0 text-body-secondary"
+                >Market Updates</a
               >
             </li>
             <li class="nav-item mb-4">
-              <nuxt-link to="/certificate" class="nav-link p-0 text-body-secondary"
-                >Download Certificate</nuxt-link
+              <a href="/certificate" class="nav-link p-0 text-body-secondary"
+                >Download Certificate</a
               >
             </li>
           </ul>
@@ -90,9 +90,9 @@
           <h5 class="text-capitalize">
             Support for this kind of more resources
           </h5>
-          <nuxt-link to="/pay">
+          <a href="/pay">
             <img class="mt-4" src="/images/qr.webp" width="160" alt="" />
-          </nuxt-link>
+          </a>
         </div>
       </footer>
     </div>
