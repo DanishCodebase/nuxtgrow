@@ -61,6 +61,10 @@ useHead({
   ],
   link: [
     {
+      href: "https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css",
+      rel: "stylesheet",
+    },
+    {
       href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
       rel: "stylesheet",
       integrity:
@@ -96,11 +100,6 @@ useHead({
       defer: "defer",
       type: "text/javascript",
     },
-    {
-      src: "/js/course.js",
-      defer: "defer",
-      type: "text/javascript",
-    },
   ],
 });
 </script>
@@ -109,7 +108,6 @@ useHead({
   <Header />
   <slot />
   <Footer />
-  <Coursepop />
 </template>
 
 <style scoped>

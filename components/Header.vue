@@ -11,17 +11,13 @@
     class="navbar position-fixed top-0 w-100 py-0 navbar-expand-lg white box-b"
   >
     <div class="container mx-lg-4 mx-xl-auto px-xl-5">
-      <a
-        class="navbar-brand d-flex flex-column align-items-center"
-        href="/"
+      <a class="navbar-brand d-flex flex-column align-items-center" href="/"
         ><img
           src="/images/Resilient-Grow1.webp"
           height="50"
           width="79"
           alt=""
-        /><span class="fs-6 fw-normal" id="slogan"
-          >Resilient Grow</span
-        ></a
+        /><span class="fs-6 fw-normal" id="slogan">Resilient Grow</span></a
       ><button
         class="navbar-toggler rounded-pill blue"
         type="button"
@@ -57,7 +53,7 @@
               <a class="nav-link" href="/#reviews">Reviews</a>
             </li> -->
           <li class="nav-item">
-            <button class="nav-link" id="cours">Course</button>
+            <a href="/course" class="nav-link">Course</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#contact">Contact Us</a>
@@ -68,7 +64,9 @@
           class="btn hero-btn effect btn--glow d-flex align-items-center mx-auto me-lg-0 ms-xl-5 rounded-pill mt-4 mt-lg-0 blue btn-101"
           type="submit"
           target="_blank"
-          >Become A Pro Trader
+        >
+          <i class="ri-phone-fill me-2"></i>
+          Become A Pro Trader
         </a>
       </div>
     </div>
