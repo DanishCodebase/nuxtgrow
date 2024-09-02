@@ -23,13 +23,12 @@
                 9 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/course/stock-market-basics"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="col">
@@ -51,13 +50,12 @@
                 12 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/course/options-scalping"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="col">
@@ -79,13 +77,12 @@
                 9 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/course/option-strategies"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="col">
@@ -107,13 +104,12 @@
                 14 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/course/fundamental-analysis"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="col">
@@ -135,13 +131,12 @@
                 11 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/course/technical-analysis"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="col">
@@ -163,13 +158,12 @@
                 8 Chs
               </span>
             </div>
-            <nuxt-link
-              to=""
+            <a
+              href="/free-courses"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
-              target="_blank"
               >Start Learning
-            </nuxt-link>
+            </a>
           </div>
         </div>
       </div>
