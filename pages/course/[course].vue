@@ -1,5 +1,10 @@
 <script setup>
+import overview from "./overview.json";
 const { course } = useRoute().params;
+
+const courseDets = ref(overview.find((over) => over.id === course));
+
+// console.log(courseDets);
 </script>
 
 <template>
@@ -9,8 +14,9 @@ const { course } = useRoute().params;
         <div class="row">
           <div class="col col-lg-7">
             <h1 class="mb-4">
-              Stock Market Course -<br />
-              Beginners Module
+              <!-- Stock Market Course -<br />
+              Beginners Module -->
+              {{ courseDets.heading }}
             </h1>
             <div class="d-flex align-items-end">
               <h5 class="me-2">9</h5>
@@ -34,7 +40,9 @@ const { course } = useRoute().params;
               >Learn More
             </a>
           </div>
-          <div class="col col-lg-5 d-flex justify-content-center align-items-center">
+          <div
+            class="col col-lg-5 d-flex justify-content-center align-items-center"
+          >
             <div class="overview-img text-center">
               <img
                 src="https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg"
@@ -58,10 +66,10 @@ const { course } = useRoute().params;
           <div class="col ps-5">
             <h5 class="mb-3">SKILLS YOU WILL GAIN</h5>
             <ul>
-                <li>Get a Basic Understanding of how stock markets work</li>
-                <li>Why & How Should One Invest</li>
-                <li>Money Management Skills</li>
-                <li>Risk Management Skills</li>
+              <li>Get a Basic Understanding of how stock markets work</li>
+              <li>Why & How Should One Invest</li>
+              <li>Money Management Skills</li>
+              <li>Risk Management Skills</li>
             </ul>
           </div>
         </div>

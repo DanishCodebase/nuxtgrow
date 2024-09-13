@@ -1,0 +1,44 @@
+[
+  {
+    "id": "stock-market-basics",
+    "heading": "Stock Market Course - Beginners Module",
+    "chapters": {
+      "chapter": 9,
+      "chapname": "Chapters"
+    },
+    "time": {
+      "time": "2:30",
+      "timename": "Hours"
+    },
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg",
+    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it.",
+    "will-learn": "You might have come across jargons like NIFTY, SENSEX, MCap, Short selling, IPO and so many more. The concepts seem to be difficult to understand but are actually very easy to understand if you try to relate it to practical examples. The course will be helpful for beginners looking to start investment in stock markets and it is also useful for learners from a non-finance background.",
+    "skills": [
+      "Get a Basic Understanding of how stock markets work",
+      "Why & How Should One Invest",
+      "Money Management Skills",
+      "Risk Management Skills"
+    ]
+  },
+  {
+    "id": "options-scalping",
+    "heading": "Options Scalping",
+    "chapters": {
+      "chapter": 12,
+      "chapname": "Chapters"
+    },
+    "time": {
+      "time": "2:30",
+      "timename": "Hours"
+    },
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg",
+    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it.",
+    "will-learn": "You might have come across jargons like NIFTY, SENSEX, MCap, Short selling, IPO and so many more. The concepts seem to be difficult to understand but are actually very easy to understand if you try to relate it to practical examples. The course will be helpful for beginners looking to start investment in stock markets and it is also useful for learners from a non-finance background.",
+    "skills": [
+      "Get a Basic Understanding of how stock markets work",
+      "Why & How Should One Invest",
+      "Money Management Skills",
+      "Risk Management Skills"
+    ]
+  }
+]

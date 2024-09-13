@@ -1,37 +1,42 @@
-<script setup></script>
+<script setup>
+import overview from "./overview.json"
+
+const overviews = ref(overview);
+
+function limitWords(str, limit) {
+  return str.split(" ").slice(0, limit).join(" ");
+}
+</script>
 
 <template>
   <section class="course">
     <div class="container">
       <div class="row row-cols-lg-3">
-        <div class="col">
+        <div v-for="over in overviews" class="col">
           <div class="course-card text-center">
             <div class="img">
-              <img
-                src="https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg"
-                alt=""
-              />
+              <img :src="over.image" alt="" />
             </div>
-            <h5 class="mt-4">Stock Market Basics</h5>
+            <h5 class="mt-4">{{ limitWords(over.heading, 3) }}</h5>
             <div class="time-to-read">
               <span>
                 <i class="ri-time-fill"></i>
-                2:30 Hours
+                {{ over.time.time }} Hours
               </span>
               <span class="ms-2">
                 <i class="ri-book-fill"></i>
-                9 Chs
+                {{ over.chapters.chapter }} Chs
               </span>
             </div>
             <a
-              href="/course/stock-market-basics"
+              :href="'/course/'+over.id"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
               >Start Learning
             </a>
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <div class="course-card text-center">
             <div class="img">
               <img
@@ -165,7 +170,7 @@
               >Start Learning
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
