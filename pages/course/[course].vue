@@ -19,18 +19,13 @@ const courseDets = ref(overview.find((over) => over.id === course));
               {{ courseDets.heading }}
             </h1>
             <div class="d-flex align-items-end">
-              <h5 class="me-2">9</h5>
+              <h5 class="me-2">{{ courseDets.chapter }}</h5>
               Chapters
-              <h5 class="ms-5 me-2">2:30</h5>
+              <h5 class="ms-5 me-2">{{ courseDets.time }}</h5>
               Hours
             </div>
             <p class="mt-4">
-              Investing provides financial stability, and the Stock market plays
-              an important role when it comes to generating returns which can
-              beat inflation, stock market it is a place where people buy/sell
-              shares of publicly listed companies. In this module, you will know
-              more about the basic of stock market, how to get started, how it
-              functions and the various intermediaries that appertain it.
+              {{ courseDets.paragraph }}
               <a href="" class="text-decoration-underline">MORE</a>
             </p>
             <a
@@ -55,21 +50,13 @@ const courseDets = ref(overview.find((over) => over.id === course));
           <div class="col">
             <h5 class="mb-3">WHAT YOU WILL LEARN</h5>
             <p>
-              You might have come across jargons like NIFTY, SENSEX, MCap, Short
-              selling, IPO and so many more. The concepts seem to be difficult
-              to understand but are actually very easy to understand if you try
-              to relate it to practical examples. The course will be helpful for
-              beginners looking to start investment in stock markets and it is
-              also useful for learners from a non-finance background.
+              {{ courseDets["will-learn"] }}
             </p>
           </div>
           <div class="col ps-5">
             <h5 class="mb-3">SKILLS YOU WILL GAIN</h5>
             <ul>
-              <li>Get a Basic Understanding of how stock markets work</li>
-              <li>Why & How Should One Invest</li>
-              <li>Money Management Skills</li>
-              <li>Risk Management Skills</li>
+              <li v-for="skill in courseDets.skills">{{ skill }}</li>
             </ul>
           </div>
         </div>

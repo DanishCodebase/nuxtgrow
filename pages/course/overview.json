@@ -2,16 +2,10 @@
   {
     "id": "stock-market-basics",
     "heading": "Stock Market Course - Beginners Module",
-    "chapters": {
-      "chapter": 9,
-      "chapname": "Chapters"
-    },
-    "time": {
-      "time": "2:30",
-      "timename": "Hours"
-    },
+    "chapter": "9",
+    "time": "2:30",
     "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg",
-    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it.",
+    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it. MORE",
     "will-learn": "You might have come across jargons like NIFTY, SENSEX, MCap, Short selling, IPO and so many more. The concepts seem to be difficult to understand but are actually very easy to understand if you try to relate it to practical examples. The course will be helpful for beginners looking to start investment in stock markets and it is also useful for learners from a non-finance background.",
     "skills": [
       "Get a Basic Understanding of how stock markets work",
@@ -22,23 +16,78 @@
   },
   {
     "id": "options-scalping",
-    "heading": "Options Scalping",
-    "chapters": {
-      "chapter": 12,
-      "chapname": "Chapters"
-    },
-    "time": {
-      "time": "2:30",
-      "timename": "Hours"
-    },
+    "heading": "Options Scalping Course",
+    "chapter": "12",
+    "time": "2:30",
     "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Stock-Market-Basics.svg",
-    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it.",
+    "paragraph": "Investing provides financial stability, and the Stock market plays an important role when it comes to generating returns which can beat inflation, stock market it is a place where people buy/sell shares of publicly listed companies. In this module, you will know more about the basic of stock market, how to get started, how it functions and the various intermediaries that appertain it. MORE",
     "will-learn": "You might have come across jargons like NIFTY, SENSEX, MCap, Short selling, IPO and so many more. The concepts seem to be difficult to understand but are actually very easy to understand if you try to relate it to practical examples. The course will be helpful for beginners looking to start investment in stock markets and it is also useful for learners from a non-finance background.",
     "skills": [
       "Get a Basic Understanding of how stock markets work",
       "Why & How Should One Invest",
       "Money Management Skills",
       "Risk Management Skills"
+    ]
+  },
+  {
+    "id": "option-trading",
+    "heading": "Option Trading Course: Learn Stock Option Trading Online",
+    "chapter": "9",
+    "time": "2:15",
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/10.svg",
+    "paragraph": "Equity derivatives are a type of financial instrument where the value is derived from one or more underlying equity security.A derivative is a security which is an agreement signed between two or more parties to buy or sell assets in the future. MORE",
+    "will-learn": "Here, you will learn here different concepts of derivatives such as Options, Futures, and swaps. Moreover, you will learn to differentiate these concepts as they are very complex in nature.You will also learn to manage risks associated with trading in Futures and options by learning the concepts of various greeks.",
+    "skills": [
+      "Understanding Forwards",
+      "Understanding Options",
+      "Understanding Futures",
+      "Understanding Swaps",
+      "Understanding Greeks"
+    ]
+  },
+  {
+    "id": "fundament-analysis",
+    "heading": "Fundamental Analysis Course - Beginners Module",
+    "chapter": "13",
+    "time": "3:15",
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Fundamental-Analysis.svg",
+    "paragraph": "Many investors buy and hold stocks because they believe in long-term investing. So, fundamental analysis of a corporation is the process of gaining a basic grasp of how a business operates at the financial level. In other words, it aids investors in comprehending the fundamental concept around which the firm is founded. It's also a technique for investors to spot organisations that are fundamentally sound and invest in them for the long term. This is accomplished by examining a variety of fundamental indicators and factors. MORE",
+    "will-learn": "This is a well-designed course that lays the groundwork for understanding Fundamental Analysis. The course is scientifically intended to assist participants learn essential capital market concepts and terminologies and how to apply them to stock investing. The backbone of investment is fundamental analysis. To forecast a company’s future performance, fundamental analysts examine the Balance Sheet, Income Statement, and Cash Flow Statement.The purpose of this curriculum is to teach you how to read and analyse a balance sheet and an income statement together.",
+    "skills": [
+      "Understanding Balance sheet",
+      "Understanding Financial Statements",
+      "Understanding Valuations of company",
+      "Knowing the Real Value of a Company",
+      "Higher Risk Appetite"
+    ]
+  },
+  {
+    "id": "technical-analysis",
+    "heading": "Technical Analysis Course",
+    "chapter": "11",
+    "time": "2:45",
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/Technical-Analysis.svg",
+    "paragraph": "If someone says they can predit price movements,will you beileve them? Seems quite unrealistic but it is actually not. Techincal analysis is a science that uses historical data of the price and volume of a specific stock to predict price movements. This course simplifies the pratical use of techincal analysis for beginners who are looking to start taking decisions of their own before using techincal analysis. The course is going to help an absolute beginner who wants to start taking decisions,prediciting price movements. It will also help an intermediate investor who knows about techincal charting but wants to improve his knowledge around how to invest. MORE",
+    "will-learn": "If you actively follow business channels you might have come across words like Support, Resistance, Retracement and many more. The words seem to be difficult to understand but are actually they are very easy to understand if you try to understand the meaning of these terms. The course will be an absolute helper to a beginners who is looking to understand the concepts related to technical analysis and would also useful for learners from a non-finance background.",
+    "skills": [
+      "Get a Basic Understanding what is Technical Analysis",
+      "Learn How Are Charting Is done",
+      "Learn How to Use Technical Analysis to Predict Price Movements.",
+      "Learn How to Use Dechnical Analysis to Predict Price Movements."
+    ]
+  },
+  {
+    "id": "technical-indicators",
+    "heading": "Technical Indicators Course - Advance Module",
+    "chapter": "8",
+    "time": "2:00",
+    "image": "https://www.5paisa.com/finschool/wp-content/uploads/2021/10/g12-2.svg",
+    "paragraph": "Technical Analysis is a method of forecasting the direction of prices by examining the historical price data of stock. It also involves the identification of previous market patterns on charts. They can also help traders form fairly accurate future price predictions. Technical analysis has a wide range of tools which can be beneficial for finding various trends on charts.",
+    "will-learn": "Here, you will learn how to use various tools and methods used in technical analysis in dept. Also, you will learn how to identify and use the right advanced indicators for analysing the chart pattern. You will understand the use of support and resistance in a chart.",
+    "skills": [
+      "Advanced price action strategies",
+      "Advanced technical indicators",
+      "Elliot wave theory analysis"
     ]
   }
 ]

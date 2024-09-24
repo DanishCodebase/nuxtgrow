@@ -21,11 +21,11 @@ function limitWords(str, limit) {
             <div class="time-to-read">
               <span>
                 <i class="ri-time-fill"></i>
-                {{ over.time.time }} Hours
+                {{ over.time }} Hours
               </span>
               <span class="ms-2">
                 <i class="ri-book-fill"></i>
-                {{ over.chapters.chapter }} Chs
+                {{ over.chapter }} Chs
               </span>
             </div>
             <a
