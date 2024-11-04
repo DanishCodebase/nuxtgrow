@@ -55,7 +55,7 @@ const registerUser = async () => {
     toast.success("User data submitted successfully!");
   } catch (error) {
     console.error("Data submission error:", error);
-    toast.success(
+    toast.error(
       "Data submission failed. Please try again. Error: " + error.message
     );
   }
