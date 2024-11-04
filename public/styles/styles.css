@@ -550,18 +550,26 @@ p.text-center {
   color: red;
 }
 .form-container {
+  flex-direction: column;
   max-width: 700px;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   margin: auto;
   border-radius: 12px;
   background-color: var(--color-bg);
 }
+
 .right-part {
-  padding: 50px 30px 30px;
+  padding: 50px 20px 20px;
 }
+
+.right-part > form {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-part > h1 {
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 24px;
   color: var(--color-fg);
 }
 .form-select,
@@ -575,7 +583,7 @@ label {
 .right-part select {
   padding: 10px 14px;
   font-size: 14px;
-  width: calc(100% - 30px);
+  width: calc(100%);
   margin-bottom: 20px;
   border-radius: 50px;
   background-color: var(--color-bg);
@@ -590,10 +598,17 @@ label {
   padding: 8px 30px;
   border-radius: 100px;
 }
-.left-part > img {
+
+/* .left-part {
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+} */
+
+/* .left-part > img {
   border-radius: 12px 0 0 12px;
   min-height: 100%;
-}
+} */
 #close {
   top: 15px;
   background-color: transparent;
@@ -609,6 +624,7 @@ label {
   border-radius: 0 12px 12px 0;
 }
 .new {
+  font-size: 14px;
   color: #757575;
 }
 .member,
@@ -617,10 +633,10 @@ label {
   color: #477fef;
 }
 #login #btnSubmit {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 #login .right-part {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   padding-bottom: 50px;
 }
 #error {
@@ -691,10 +707,10 @@ label {
   .form-container {
     max-width: 530px;
   }
-  .right-part input,
+  /* .right-part input,
   .right-part select {
     width: 80%;
-  }
+  } */
 }
 @media (max-width: 767.5px) {
   footer > .col-md-4 {

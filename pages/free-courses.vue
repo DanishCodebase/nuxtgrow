@@ -6,17 +6,67 @@ useHead({
       defer: "defer",
       type: "text/javascript",
     },
-    {
-      src: "/js/pop-up.js",
-      defer: "defer",
-      type: "text/javascript",
-    },
   ],
 });
+
+import { ref } from "vue";
+import { account, ID } from "@/server/appwrite";
+import { useToast } from "vue-toastification";
+
+const name = ref("");
+const email = ref("");
+const password = ref("");
+const loggedInUser = ref(null);
+
+const toast = useToast();
+
+// Function to check if a session is already active
+const checkSession = async () => {
+  try {
+    const user = await account.get();
+    loggedInUser.value = user;
+  } catch (error) {
+    loggedInUser.value = null; // No active session
+  }
+};
+
+const login = async (email, password) => {
+  try {
+    if (!loggedInUser.value) {
+      await account.createEmailPasswordSession(email, password);
+      loggedInUser.value = await account.get();
+    } else {
+      console.log("User is already logged in.");
+    }
+  } catch (error) {
+    console.error("Login error:", error);
+    toast.error("Login failed. Please try again. Error: " + error.message);
+  }
+};
+
+const registerUser = async () => {
+  try {
+    // Step 1: Add user details to the database collection
+    await account.create(ID.unique(), email.value, password.value, name.value);
+
+    // Step 2: Log the user in only if they are not already logged in
+    await login(email.value, password.value);
+
+    toast.success("User data submitted successfully!");
+  } catch (error) {
+    console.error("Data submission error:", error);
+    toast.success(
+      "Data submission failed. Please try again. Error: " + error.message
+    );
+  }
+};
+
+// Check for an existing session when the component loads
+checkSession();
 </script>
 
 <template>
-  <section class="free-course">
+  <section v-if="!loggedInUser" class="free-course">
     <div class="container">
       <h1>Let's Start Free Learning Now</h1>
       <nav class="mt-4 px-4 px-sm-5">
@@ -791,71 +841,600 @@ useHead({
     </div>
   </section>
 
-  <section class="pop-up">
-    <div class="form-container">
-      <div class="left-part">
-        <img src="/images/Grow-Indication.webp" height="510" alt="" />
+  <section v-if="loggedInUser" class="free-course">
+    <div class="container">
+      <h1>Let's Start Free Learning Now</h1>
+      <nav class="mt-4 px-4 px-sm-5">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Free Videos
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Free Materails
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <div class="free-grid justify-content-center d-grid text-center">
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/o_dBxEl1458"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/ncOwuVc6RGg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/1zzzQlZe3p8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/Qnztvj9YwiE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/VtptxpFMRuc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/lx7IvEa38uA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/XM_PRoF2-Ms"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/UlyGksZzbbw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/bacrEmpY0SQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/s4AA1syNyco"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/hGN_PuFtGD0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/75DTFxejXko"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/A9t317p4X_k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/o9e9mhSgbVk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/FX-0Eg99s7w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/oetfEMrtnQ4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="free-courses video-placeholder position-relative">
+              <iframe
+                id="c-vid"
+                width="280"
+                height="500"
+                src="https://www.youtube.com/embed/8SfNQIu6tio"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+          tabindex="0"
+        >
+          <div class="mt-3 px-4 px-sm-5 row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/ATR.pdf">
+                  <img
+                    src="/images/ATR.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/SuperTrend.pdf">
+                  <img
+                    src="/images/SuperTrend.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/VWAP.pdf">
+                  <img
+                    src="/images/VWAP.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/MovingAverage.pdf">
+                  <img
+                    src="/images/MovingAverage.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/PCR.pdf">
+                  <img
+                    src="/images/PCR.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/OptionGreeks.pdf">
+                  <img
+                    src="/images/OptionGreeks.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/RSI.pdf">
+                  <img
+                    src="/images/RSI.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Bollinger Bands.pdf">
+                  <img
+                    src="/images/bollinger bands.png"
+                    class="card-img-top"
+                    alt="bollinger bands image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Support and Resistance.pdf">
+                  <img
+                    src="/images/Support and Resistance.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Gap Up and Gap Down.pdf">
+                  <img
+                    src="/images/gap-up and gap-down.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="pdfs/MACD Indicator.pdf">
+                  <img
+                    src="/images/MACD.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Ascending triangle.pdf">
+                  <img
+                    src="/images/Ascending triangle.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Descending triangle.pdf">
+                  <img
+                    src="/images/Descending triangle.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/bullish flag.pdf">
+                  <img
+                    src="/images/bullish flag.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Bullish Pennat.pdf">
+                  <img
+                    src="/images/bullish pennat.png"
+                    class="card-img-top"
+                    alt="bollinger bands image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Bum and Run.pdf">
+                  <img
+                    src="/images/bump and run.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Cup and Handle.pdf">
+                  <img
+                    src="/images/cup and handle.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Double top.pdf">
+                  <img
+                    src="/images/double top.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/double bottom.pdf">
+                  <img
+                    src="/images/double bottom.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/falling wedge.pdf">
+                  <img
+                    src="/images/falling wedge.png"
+                    class="card-img-top"
+                    alt="bollinger bands image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/head & shoulders.pdf">
+                  <img
+                    src="/images/head & shoulders.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Inverse head & shoulders.pdf">
+                  <img
+                    src="/images/Inverse head & shoulders.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/price channel.pdf">
+                  <img
+                    src="/images/price channel.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/Rounding bottom.pdf">
+                  <img
+                    src="/images/rounding bottom.png"
+                    class="card-img-top"
+                    alt="RSI image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/symmetrical triangle.pdf">
+                  <img
+                    src="/images/symmetrical triangle.png"
+                    class="card-img-top"
+                    alt="bollinger bands image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/treeple top pattern.pdf">
+                  <img
+                    src="/images/triple top pattern.png"
+                    class="card-img-top"
+                    alt="Ascending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="/pdfs/triple bottom pattern.pdf">
+                  <img
+                    src="/images/triple bottom pattern.png"
+                    class="card-img-top"
+                    alt="Descending triangle image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section v-if="!loggedInUser" class="pop-up">
+    <div class="form-container">
+      <!-- <div class="left-part">
+        <img src="/images/Grow-Indication.webp" height="510" alt="" />
+      </div> -->
       <div class="right-part">
         <h1>Now Start Learning Freely</h1>
-        <form
-          action="https://submit.jotform.com/submit/233248955667471"
-          method="POST"
-          id="myForm"
-        >
-          <label for="name"
+        <form @submit.prevent="registerUser">
+          <label for="Number"
             ><input
-              id="name"
-              minlength="3"
-              maxlength="50"
-              type="text"
-              name="q1_typeA"
-              placeholder="Name"
-              required /></label
-          ><label for="Number"
-            ><input
+              v-model="name"
               id="Number"
               type="tel"
-              name="q2_2"
               minlength="10"
               placeholder="Mobile Number"
               maxlength="10"
-              required /></label
-          ><label for="city"
-            ><input
-              id="city"
-              minlength="3"
-              type="text"
-              name="q3_3"
-              placeholder="City"
-              required /></label
-          ><label for="job"
-            ><select
-              class="form-select"
-              aria-label="Default select example"
-              name="q4_selectYour"
-              id="job"
               required
-            >
-              <option value="">Select your profession</option>
-              <option value="government">Government Job</option>
-              <option value="private">Private Job</option>
-              <option value="self">Self Employed</option>
-              <option value="student">Student</option>
-            </select></label
-          ><label for="experience"
-            ><select
-              class="form-select"
-              aria-label="Default select example"
-              id="experience"
-              name="q5_selectYour5"
-            >
-              <option value="">Select your experience level</option>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="experienced">Experienced</option>
-            </select></label
-          ><button id="btnSubmit" class="btn-101" type="submit">
+          /></label>
+          <label for="email">
+            <input
+              v-model="email"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <label for="password">
+            <input
+              v-model="password"
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </label>
+          <button id="btnSubmit" class="btn-101" type="submit">
             Let's succeed together
           </button>
         </form>
@@ -865,46 +1444,41 @@ useHead({
     </div>
   </section>
 
-  <section class="pop-up" id="login">
+  <section v-if="!loggedInUser" class="pop-up" id="login">
     <div class="form-container">
       <div class="right-part">
         <h1>Now Start Learning Freely</h1>
-        <div id="error">
+        <div id="error" v-if="loginError">
           <button id="exclam">&#33;</button> Sorry, your login credentials are
           incorrect.
         </div>
-        <form
-          id="LoginForm"
-          action="https://submit.jotform.com/submit/233248955667471"
-          method="POST"
-        >
-          <label for="name"
-            ><input
-              id="nam"
-              minlength="3"
-              maxlength="50"
-              type="text"
-              placeholder="Name"
-              required /></label
-          ><label for="Number"
-            ><input
-              id="phone"
-              type="tel"
-              minlength="10"
-              placeholder="Mobile Number"
-              maxlength="10"
-              required /></label
-          ><button id="btnSubmit" class="btn-101" type="submit">
+        <form @submit.prevent="login(email, password)">
+          <label for="email">
+            <input
+              id="email"
+              v-model="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <label for="password">
+            <input
+              id="password"
+              v-model="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </label>
+          <button id="btnSubmit" class="btn-101" type="submit">
             Let's succeed together
           </button>
         </form>
-        <span class="new">New to Resilient Grow?</span
-        ><a class="member"> Become member</a>
+        <span class="new">New to Resilient Grow?</span>
+        <a class="member"> Become member</a>
       </div>
       <img id="close" class="close" src="/icons/close.png" alt="" />
-      <div class="left-part">
-        <img src="/images/Grow-Indication.webp" height="510" alt="" />
-      </div>
     </div>
   </section>
 </template>

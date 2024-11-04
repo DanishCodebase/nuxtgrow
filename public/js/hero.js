@@ -13,13 +13,11 @@ function autoShowPopup() {
 }
 function showPopup() {
   (document.querySelector(".pop-up").style.opacity = "1"),
-    (document.querySelector(".pop-up").style.visibility = "visible"),
-    (document.body.style.overflow = "hidden");
+    (document.querySelector(".pop-up").style.visibility = "visible");
 }
 function hidePopup() {
   (document.querySelector(".pop-up").style.opacity = "0"),
-    (document.querySelector(".pop-up").style.visibility = "hidden"),
-    (document.body.style.overflow = "");
+    (document.querySelector(".pop-up").style.visibility = "hidden");
 }
 let s = 0;
 function show() {

@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "appwrite": "^16.0.2",
     "nuxt": "^3.12.4",
     "remixicon": "^4.3.0",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@iconify-json/ri": "^1.2.0"

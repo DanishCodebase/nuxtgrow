@@ -60,7 +60,7 @@
           </li>
         </ul>
         <a
-          href="https://fas.st/t/MSkxE2fJ"
+          href="tel:9319319579"
           class="btn hero-btn effect btn--glow d-flex align-items-center mx-auto me-lg-0 ms-xl-5 rounded-pill mt-4 mt-lg-0 blue btn-101"
           type="submit"
           target="_blank"
