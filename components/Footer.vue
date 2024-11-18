@@ -22,7 +22,7 @@
               ><img src="/icons/youtube.png" alt="" /></a
             ><a href="https://www.facebook.com/resilientgrow1" target="_blank"
               ><img src="/icons/facebook.png" alt="" /></a
-            ><a href="https://shorturl.at/loCD6" target="_blank"
+            ><a href="https://wa.link/0nflac" target="_blank"
               ><img src="/icons/whatsapp.png" alt="" /></a
             ><a href="https://t.me/resilientgrow" target="_blank"
               ><img src="/icons/telegram.png" alt="" /></a

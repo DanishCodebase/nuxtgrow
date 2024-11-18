@@ -33,19 +33,19 @@
           />
           <h5>Future & Option</h5>
         </nuxt-link>
-        <nuxt-link to="https://wa.me/917524801556" class="offer-card">
+        <nuxt-link to="https://wa.link/0nflac" class="offer-card">
           <img class="mb-4 mt-3" src="/icons/heavy.png" alt="" />
           <h5>Bike Insurance</h5>
         </nuxt-link>
-        <nuxt-link to="https://wa.me/917524801556" class="offer-card">
+        <nuxt-link to="https://wa.link/0nflac" class="offer-card">
           <img class="mb-4 mt-3" src="/icons/car.png" alt="" />
           <h5>Car Insurance</h5>
         </nuxt-link>
-        <nuxt-link to="https://wa.me/917524801556" class="offer-card">
+        <nuxt-link to="https://wa.link/0nflac" class="offer-card">
           <img class="mb-4 mt-3" src="/icons/stethoscope.png" alt="" />
           <h5>Health Insurance</h5>
         </nuxt-link>
-        <nuxt-link to="https://wa.me/917524801556" class="offer-card">
+        <nuxt-link to="https://wa.link/0nflac" class="offer-card">
           <img class="mb-4 mt-3" src="/icons/family-insurance.png" alt="" />
           <h5>Life Insurance</h5>
         </nuxt-link>

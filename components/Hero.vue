@@ -32,7 +32,7 @@
             class="d-grid d-flex align-items-center justify-content-center justify-content-lg-start mt-5"
           >
             <nuxt-link
-              to="https://wa.me/917524801556"
+              to="https://wa.link/0nflac"
               type="button"
               class="btn btn--glow effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
               target="_blank"
