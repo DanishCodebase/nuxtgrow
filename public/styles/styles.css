@@ -933,9 +933,13 @@ label {
     width: 288px;
     height: 162px;
   }
+  .pop-up {
+    padding: 20px;
+  }
   .form-container {
     max-width: 100%;
-    margin-left: 20px;
+    width: calc(100% - 40px);
+    /* padding: 20px; */
   }
   .right-part input,
   .right-part select {
