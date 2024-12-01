@@ -1,5 +1,5 @@
 <script setup>
-import overview from "./overview.json"
+import overview from "./overview.json";
 
 const overviews = ref(overview);
 
@@ -29,7 +29,7 @@ function limitWords(str, limit) {
               </span>
             </div>
             <a
-              :href="'/course/'+over.id"
+              :href="'/course/' + over.id"
               type="button"
               class="btn d-block effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101 mt-3"
               >Start Learning
@@ -180,6 +180,7 @@ function limitWords(str, limit) {
 .course {
   margin-top: 164px;
   padding-bottom: 80px;
+  background-color: #ff9056 !important;
 }
 
 .course-card {
@@ -187,6 +188,8 @@ function limitWords(str, limit) {
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.18) 0 2px 4px;
   border-radius: 15px;
+  border: none;
+  background-color: #fff;
 }
 
 .img {

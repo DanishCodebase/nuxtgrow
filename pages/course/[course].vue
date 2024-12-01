@@ -74,6 +74,8 @@ const courseDets = ref(overview.find((over) => over.id === course));
 .course-card {
   padding: 20px;
   padding-bottom: 60px;
+  background-color: #fff;
+  color: #000;
 }
 
 .course-card h5 {

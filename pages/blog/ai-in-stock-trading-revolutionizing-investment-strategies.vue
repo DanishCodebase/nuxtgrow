@@ -413,7 +413,7 @@ definePageMeta({
   text-decoration: none;
 }
 a.card-title {
-  color: #d60056 !important;
+  color: #000 !important;
 }
 
 .blog {
