@@ -9,9 +9,10 @@
             ><img
               src="/images/Resilient-Grow1.webp"
               height="50"
-              width="79"
+              width="50"
               alt=""
-            /><span class="fs-6 fw-normal">Resilient Grow</span></a
+            />
+            <span class="fs-6 fw-normal">Resilient Grow</span></a
           >
           <p class="text-body-secondary mt-4">
             To deliver top-notch education and enable people to command their
@@ -115,3 +116,10 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.col h5,
+.navbar-brand > .fw-normal {
+  color: #000 !important;
+}
+</style>

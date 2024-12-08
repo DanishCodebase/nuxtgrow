@@ -15,7 +15,7 @@
         ><img
           src="/images/Resilient-Grow1.webp"
           height="50"
-          width="79"
+          width="50"
           alt=""
         /><span class="fs-6 fw-normal" id="slogan">Resilient Grow</span></a
       ><button
@@ -53,7 +53,7 @@
               <a class="nav-link" href="/#reviews">Reviews</a>
             </li> -->
           <li class="nav-item">
-            <a href="/course" class="nav-link">Course</a>
+            <a href="/free-courses" class="nav-link">Course</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#contact">Contact Us</a>

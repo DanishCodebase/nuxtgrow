@@ -108,7 +108,7 @@ html {
   --forwards: none;
   --opacity: 0.6;
   --form-color: rgba(255, 255, 255, 0.45);
-  --load-bg: #111;
+  --load-bg: none;
 }
 .company,
 .policy {
@@ -143,7 +143,7 @@ section {
   transition: 0.21s ease-in-out;
   background-image: url("/icons/night.png");
   position: fixed;
-  bottom: 25px;
+  bottom: 15px;
   left: 3vw;
   z-index: 3;
   border: none;
@@ -177,7 +177,7 @@ section {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: var(--scroll-bg);
 }
 
 body > nav {
@@ -417,6 +417,7 @@ h2 {
   height: 100px;
   margin-bottom: 2rem !important;
 }
+
 .reviews {
   padding: 90px 0;
 }
@@ -684,7 +685,7 @@ label {
 }
 .new {
   font-size: 14px;
-  color: #757575;
+  color: #111;
 }
 .member,
 .member1 {
@@ -938,7 +939,7 @@ label {
   }
   .form-container {
     max-width: 100%;
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
     /* padding: 20px; */
   }
   .right-part input,

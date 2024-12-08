@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from "vue";
+import Socials from "~/components/Socials.vue";
 
 onMounted(() => {
   // Night and day theme toggle functionality
@@ -108,6 +109,7 @@ useHead({
   <Header />
   <slot />
   <Footer />
+  <Socials />
 </template>
 
 <style scoped>
