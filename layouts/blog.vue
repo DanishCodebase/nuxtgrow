@@ -86,9 +86,10 @@ useHead({
 <template>
   <Header />
   <slot />
-  <div class="position-relative">
+  <!-- <div class="position-relative"> -->
     <Footer />
-  </div>
+  <!-- </div> -->
+  <Socials />
 </template>
 
 <style scoped>

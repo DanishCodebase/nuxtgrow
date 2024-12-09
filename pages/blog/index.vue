@@ -17,39 +17,39 @@
       <div class="mt-3 mb-5 pb-3 row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
-            <nuxt-link
-              to="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
+            <a
+              href="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
             >
               <img
                 src="/images/AI Trading1.jpg"
                 class="card-img-top"
                 alt="AI in stock trading"
-            /></nuxt-link>
+            /></a>
             <div class="card-body">
-              <nuxt-link
+              <a
                 class="card-title linc"
-                to="/blog/ai-in-stock-trading-revolutionizing-investment-strategies.ejs"
+                href="/blog/ai-in-stock-trading-revolutionizing-investment-strategies.ejs"
               >
                 <h3 class="card-title fw-bold">
                   AI in Stock Trading: Revolutionizing Investment Strategies
-                </h3></nuxt-link
+                </h3></a
               >
-              <nuxt-link
+              <a
                 class="card-title linc"
-                to="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
+                href="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
               >
                 <p class="card-text cut-text">
                   Step into the world of AI in stock trading with our guide, ‘AI
                   in Stock Trading: Revolutionizing Investment Strategies.’
                   We’re here to make it easy for everyone, especially beginners.
                 </p>
-              </nuxt-link>
-              <nuxt-link
-                to="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
+              </a>
+              <a
+                href="/blog/ai-in-stock-trading-revolutionizing-investment-strategies"
                 type="button"
                 class="px-5 mt-3 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
@@ -69,12 +69,12 @@
                 Rush! The top three photographers, with the most accepted
                 photos, received cash prizes.
               </p>
-              <nuxt-link
-                to=""
+              <a
+                href=""
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
@@ -93,12 +93,12 @@
                 This sleeker, smarter, and more tailored experience is crafted
                 with you in mind, aiming to enhance your photography journey.
               </p>
-              <nuxt-link
-                to=""
+              <a
+                href=""
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
@@ -118,12 +118,12 @@
                 proven themselves to be valuable additions to their
                 photographer’s portfolio.
               </p>
-              <nuxt-link
-                to=""
+              <a
+                href=""
                 type="button"
                 class="px-5 btn effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
                 >Read more...
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>

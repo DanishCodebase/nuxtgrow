@@ -101,7 +101,7 @@ useHead({
           <h5 class="text-capitalize">
             Support for this kind of more resources
           </h5>
-          <a id="qr">
+          <a class="qr">
             <img class="mt-4" src="/images/qr.webp" width="160" alt="" />
           </a>
         </div>
@@ -135,7 +135,7 @@ useHead({
   color: #000 !important;
 }
 
-#qr {
+.qr {
   cursor: pointer;
 }
 </style>

@@ -6,7 +6,7 @@
       <!-- <h2 class="text-center text-capitalize mb-4">
         Terms &<span> Conditions</span>
       </h2> -->
-      <h2>Web Site Terms & Conditions of Use</h2>
+      <h2>Terms & Conditions of Use</h2>
       <hr />
       <p class="mt-5">
         The website www.resilientgrow.in, owned and operated by Resilient Grow,

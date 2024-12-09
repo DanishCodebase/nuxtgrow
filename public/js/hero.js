@@ -35,11 +35,14 @@ window.addEventListener("load", autoShowPopup);
 document.getElementById("close").addEventListener("click", hidePopup);
 show();
 
-document.getElementById("qr").addEventListener("click", () => {
-  // alert("working");
-  (document.querySelector(".phonepe").style.opacity = "1"),
-    (document.querySelector(".phonepe").style.visibility = "visible");
-});
+// for (let i = 0; i < 20; i++) {
+//   document.querySelectorAll(".qr")[i].addEventListener("click", () => {
+//     // alert("working");
+//     (document.querySelector(".phonepe").style.opacity = "1"),
+//       (document.querySelector(".phonepe").style.visibility = "visible");
+//     document.querySelector(".phonepe").style.display = "block";
+//   });
+// }
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({

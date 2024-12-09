@@ -13,7 +13,7 @@ definePageMeta({
     alt=""
   />
   <section class="company policy d-none d-lg-block"></section>
-  <section class="blog position-relative">
+  <section class="blog">
     <div class="container px-lg-5">
       <div class="blog-content mx-auto">
         <h1 class="pt-5">
