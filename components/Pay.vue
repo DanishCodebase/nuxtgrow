@@ -4,7 +4,6 @@ definePageMeta({
 });
 
 useHead({
-  title: "Pay - Resilient Grow",
   link: [
     {
       rel: "stylesheet",
