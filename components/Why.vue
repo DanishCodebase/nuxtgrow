@@ -132,3 +132,9 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+#why h2 {
+  color: #000;
+}
+</style>

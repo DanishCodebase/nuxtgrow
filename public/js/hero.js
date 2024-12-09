@@ -35,6 +35,12 @@ window.addEventListener("load", autoShowPopup);
 document.getElementById("close").addEventListener("click", hidePopup);
 show();
 
+document.getElementById("qr").addEventListener("click", () => {
+  // alert("working");
+  (document.querySelector(".phonepe").style.opacity = "1"),
+    (document.querySelector(".phonepe").style.visibility = "visible");
+});
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     autoplay: !0,

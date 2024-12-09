@@ -133,7 +133,7 @@ section {
   content-visibility: auto;
 }
 .blue:hover {
-  background-color: #5af;
+  /* background-color: #5af; */
   color: #fff;
 }
 .effect:hover {
@@ -1113,7 +1113,7 @@ label {
 
 .hero-btn:hover {
   border: none;
-  background-color: #55aaff;
+  background-color: var(--hero-btn);
   color: #fff;
 }
 

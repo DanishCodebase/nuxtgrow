@@ -24,6 +24,8 @@ export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
 
+    // console.log(body);
+
     const merchantTransactionId = generateTransactionId();
     const merchant_id = "M1KE7GMKEOEB";
     const merchantUserId = generateMerchantUserId();

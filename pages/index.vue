@@ -1,6 +1,4 @@
 <script setup>
-import Reviews from "~/components/Reviews.vue";
-
 useHead({
   script: [
     {
@@ -23,6 +21,6 @@ useHead({
   <!-- <Reviews /> -->
   <Offering />
   <Courses />
-  <Contact /> 
+  <Contact />
   <Popup />
 </template>

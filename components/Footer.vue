@@ -1,4 +1,14 @@
-<script setup></script>
+<script setup>
+useHead({
+  script: [
+    {
+      src: "/js/phonepe.js",
+      defer: "defer",
+      type: "text/javascript",
+    },
+  ],
+});
+</script>
 
 <template>
   <section class="footer">
@@ -91,7 +101,7 @@
           <h5 class="text-capitalize">
             Support for this kind of more resources
           </h5>
-          <a href="/pay">
+          <a id="qr">
             <img class="mt-4" src="/images/qr.webp" width="160" alt="" />
           </a>
         </div>
@@ -115,11 +125,17 @@
       >
     </div>
   </section>
+
+  <Pay />
 </template>
 
 <style scoped>
 .col h5,
 .navbar-brand > .fw-normal {
   color: #000 !important;
+}
+
+#qr {
+  cursor: pointer;
 }
 </style>

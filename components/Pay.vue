@@ -105,11 +105,13 @@ const makePayment = async () => {
   padding: 40px;
   text-align: center;
   border-radius: 20px;
-  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-  position: absolute;
+  /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
 }
 
 .cut {
@@ -142,6 +144,10 @@ const makePayment = async () => {
 form {
   text-align: left;
   margin-top: 30px;
+}
+
+input::placeholder {
+  color: #582d98;
 }
 
 input {
