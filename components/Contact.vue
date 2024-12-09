@@ -3,7 +3,7 @@
 <template>
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="text-center text-capitalize">feel free to contact me!</h2>
+      <h2 class="text-center text-capitalize">feel free to contact us!</h2>
       <p class="text-center mx-auto mt-4">
         Stay connected with us on Facebook and Instagram to keep in touch and
         get the latest updates, news, and messages. We're dedicated to sharing
