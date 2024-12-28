@@ -37,18 +37,7 @@
               class="btn btn--glow effect hero-btn rounded-pill btn-lg px-4 me-md-2 blue btn-101"
               target="_blank"
               >Start Learning With Free Demo </nuxt-link
-            ><nuxt-link
-              to="https://t.me/resilientgrowofficial"
-              type="button"
-              class="btn rounded-pill ms-3 ms-lg-4 twitter btn-lg px-4"
-              target="_blank"
-              ><img
-                class="rounded-pill"
-                src="/icons/telegram.gif"
-                width="40"
-                height="40"
-                alt=""
-            /></nuxt-link>
+            >
           </div>
         </div>
       </div>

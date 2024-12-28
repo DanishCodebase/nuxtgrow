@@ -97,6 +97,15 @@ const makePayment = async () => {
   box-sizing: border-box;
 }
 
+/* body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .container {
   width: 350px;
   height: 500px;
@@ -104,7 +113,7 @@ const makePayment = async () => {
   padding: 40px;
   text-align: center;
   border-radius: 20px;
-  /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
+  box-shadow: 14px 14px 20px #363738, -14px -14px 20px rgba(0, 0, 0, 0.45);
   position: fixed;
   top: 50%;
   left: 50%;

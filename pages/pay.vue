@@ -54,41 +54,43 @@ const makePayment = async () => {
 </script>
 
 <template>
-  <div class="container phonepe">
-    <a id="cut" class="cut">
-      <img height="16" width="16" src="../public/icons/close.png" alt="" />
-    </a>
-    <div class="brand-logo">
-      <img src="/images/phonepe.png" width="80" alt="" />
+  <section class="phonepe">
+    <div class="container">
+      <a id="cut" class="cut">
+        <img height="16" width="16" src="../public/icons/close.png" alt="" />
+      </a>
+      <div class="brand-logo">
+        <img src="/images/phonepe.png" width="80" alt="" />
+      </div>
+      <div class="brand-title">PhonePe</div>
+      <form @submit.prevent="makePayment">
+        <input
+          type="text"
+          v-model="name"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="number"
+          id="amount"
+          v-model="amount"
+          name="amount"
+          placeholder="Amount"
+          required
+        />
+        <input
+          type="tel"
+          v-model="number"
+          name="number"
+          id="number"
+          placeholder="Mobile Number"
+        />
+        <button type="submit">PAY NOW</button>
+      </form>
     </div>
-    <div class="brand-title">PhonePe</div>
-    <form @submit.prevent="makePayment">
-      <input
-        type="text"
-        v-model="name"
-        id="name"
-        name="name"
-        placeholder="Name"
-        required
-      />
-      <input
-        type="number"
-        id="amount"
-        v-model="amount"
-        name="amount"
-        placeholder="Amount"
-        required
-      />
-      <input
-        type="tel"
-        v-model="number"
-        name="number"
-        id="number"
-        placeholder="Mobile Number"
-      />
-      <button type="submit">PAY NOW</button>
-    </form>
-  </div>
+  </section>
 </template>
 
 <style scoped>
@@ -96,6 +98,16 @@ const makePayment = async () => {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.phonepe {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 .container {
@@ -107,9 +119,9 @@ const makePayment = async () => {
   border-radius: 20px;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .cut {
